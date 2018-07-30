@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointText: {fileID: 192168977}
-  Point: {fileID: 1907805301638124, guid: 035372eaa0de8fa49a10bda6de58abb8, type: 2}
+  Point: {fileID: 1918967541786142, guid: 035372eaa0de8fa49a10bda6de58abb8, type: 2}
 --- !u!1 &1683350945
 GameObject:
   m_ObjectHideFlags: 0

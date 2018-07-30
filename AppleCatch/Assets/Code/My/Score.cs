@@ -15,6 +15,6 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        pointText.GetComponent<Text>().text = Point.transform.rotation.x + "point";
+        pointText.GetComponent<Text>().text = Point.transform.position.x + "point";
     }
 }

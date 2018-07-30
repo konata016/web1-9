@@ -9,7 +9,7 @@ public class GameDirector : MonoBehaviour {
     GameObject timerText;
     GameObject pointText;
     public GameObject my;
-    float time = 30.0f;
+    float time = 10.0f;
     float point = 0f;
     GameObject generator;
 
@@ -50,13 +50,14 @@ public class GameDirector : MonoBehaviour {
         {
             generator.GetComponent<ItemGenerator>().SetParameter(1.0f, -0.03f, 2);
         }
-
-        my.transform.SetPositionAndRotation(new Vector3(point, 0, 0), my.transform.rotation);
-
-        if (time == 0)
+        if (time <= 0)
         {
             SceneManager.LoadScene("Score");
         }
+
+        my.transform.position = new Vector3(point, 0, 0);
+
+
     }
 
     public void GetApple()
